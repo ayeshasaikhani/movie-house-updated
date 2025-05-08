@@ -1,0 +1,62 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.backLink {
+  display: inline-block;
+  color: #0070f3;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.directorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.directorCard {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.directorCard:hover {
+  transform: translateY(-5px);
+}
+
+.directorCard h2 {
+  color: #222;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.directorCard p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.movieCount {
+  color: #0070f3;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .directorsGrid {
+    grid-template-columns: 1fr;
+  }
+} 
